@@ -39,3 +39,7 @@ npm run dev
 At the moment there are four Gulp tasks: `scssTask` converts SCSS to CSS, `browserSyncServe` and `browserSyncReload` initialize [Browser Sync](https://browsersync.io/) and reload the browser on every file change respectively, and `watchTask` manages the entire thing.
 
 And that's it. For now.
+
+## History
+
+Why does Tsushima exists? Check out [my Twitter thread about it](https://twitter.com/alexzan__/status/1518314564424716288).
