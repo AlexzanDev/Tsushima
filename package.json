@@ -1,0 +1,27 @@
+{
+  "name": "tsushima",
+  "version": "0.0.1",
+  "description": "A template for small websites.",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install -s && npm run dev",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexzanDev/Tsushima.git"
+  },
+  "author": "Alessandro Zangrandi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexzanDev/Tsushima/issues"
+  },
+  "homepage": "https://github.com/AlexzanDev/Tsushima#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.1"
+  }
+}
