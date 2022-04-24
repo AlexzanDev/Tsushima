@@ -95,6 +95,10 @@ p {
   max-width: 981px;
 }
 
+.header-side .footer-content {
+  margin: 0px 50px;
+}
+
 /* Custom CSS goes here! */
 .main-header {
   background-color: #000000;
