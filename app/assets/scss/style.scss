@@ -85,7 +85,44 @@ table {
     }
 }
 
+.header-side-left, .header-side-right {
+    .header-top.header-content {
+        display: block;
+        height: 100%;
+        padding: 50px;
+        .header-right {
+            margin-top: 30px;
+            .header-menu {
+                flex-direction: column;
+                li a {
+                    margin: 10px 0px 0px 0px;
+                }
+            }
+        }
+    }
+}
+
+.header-side-left {
+    position: fixed;
+    width: 320px; /* Don't use fixed width. To fix. */
+    top: 0;
+    left: 0;
+    padding: 50px 0;
+    height: 100%;
+}
+
+.header-side-right {
+    position: fixed;
+    width: 320px; /* Don't use fixed width. To fix. */
+    top: 0;
+    right: 0;
+    padding: 50px 0;
+    height: 100%;
+    float: right;
+}
+
 .main-footer {
+    position: relative;
     background-color: $color__gray;
     padding: 50px 0px;
 }
@@ -96,6 +133,14 @@ table {
     h1 {
         margin-bottom: 20px;
     }
+}
+
+.content-right {
+    margin-left: 320px;
+}
+
+.content-left {
+    margin-right: 320px;
 }
 
 .post-content {
