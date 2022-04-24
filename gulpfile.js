@@ -28,7 +28,7 @@ function browserSyncReload(cb) {
 
 // Watch for changes.
 function watchTask() {
-    gulp.watch('app/*.html', browserSync.reload); 
+    gulp.watch('app/*.html', browserSyncReload); 
     gulp.watch(['app/assets/scss/**/*.scss'], gulp.series(scssTask, browserSyncReload));
 }
 
