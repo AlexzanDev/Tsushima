@@ -1,11 +1,13 @@
 // Gulp requirements.
 var gulp = require('gulp');
 var sass = require('gulp-sass')(require('sass'));
+var filter = require('gulp-filter');
 var browserSync = require('browser-sync').create();
 
 // Convert SCSS to CSS.
 function scssTask() {
     return gulp.src('app/assets/scss/**/*.scss')
+        .pipe(filter(['**', '!app/assets/scss/modules/*.scss']))
         .pipe(sass())
         .pipe(gulp.dest('app/assets/css'));
 }
@@ -28,7 +30,7 @@ function browserSyncReload(cb) {
 
 // Watch for changes.
 function watchTask() {
-    gulp.watch('app/*.html', browserSyncReload); 
+    gulp.watch('app/*.html', browserSyncReload);
     gulp.watch(['app/assets/scss/**/*.scss'], gulp.series(scssTask, browserSyncReload));
 }
 
