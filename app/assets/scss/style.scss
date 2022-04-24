@@ -1,4 +1,4 @@
-/* Import modules */
+// Import modules.
 @import "modules/variables";
 
 /* Reset by Eric A.: http://meyerweb.com/eric/tools/css/reset/ 
@@ -21,8 +21,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -32,7 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+	line-height: 1.15;
+    font-family: 'Roboto', sans-serif;
 }
 
 ol, ul {
@@ -54,8 +53,68 @@ table {
 	border-spacing: 0;
 }
 
+/* Typography styles. */
+@import "modules/typography";
+
+/* Layout styles. */
+@import "modules/layout";
+
 /* Custom CSS goes here! */
-.container {
-    width: 90%;
-    margin: auto;
+.main-header {
+    background-color: $color__black;
+}
+
+.header-content {
+    p, a {
+        color: $color__white;
+        font-size: 18px;
+    }
+}
+
+.header-top.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    li a {
+        text-decoration: none;
+        margin: 10px;
+    }
+    .header-menu {
+        display: flex;
+    }
+}
+
+.main-footer {
+    background-color: $color__gray;
+    padding: 50px 0px;
+}
+
+.content-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+.post-content {
+    line-height: 1.8em;
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.embed-wrapper {
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden;
+    iframe {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+    }
 }
